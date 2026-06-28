@@ -92,12 +92,28 @@
 		</h2>
 		<!-- the use of select tag u must use option tag with it or els it wont work well , cz there will be no option inside the box left to pick-->
 		<select name="country">
-			
+
 			<option value="baddesh">bangladesh</option>
 			<option value="sexton"> japan</option>
-		 <!--blaa-->
-		 </select>
 
+			<!--name  = field name sent to the server. in this case name=country
+										value = actual data sent to the server. in this case value=baddesh or value=sexton
+											text between <option>...</option> = what the user sees
+						so how does the user information is stored on the server?
+						ans: if the user pics bangladesh the file will be save on contry=baddesh
+						     if they pick japan it will save on country=sexton-->
+		</select>
+
+		<!-- the correct way -->
+		<select>
+
+			<option value="bangladesh">bangladesh</option>
+			<option value="japan">japan</option>
+			<!--this the correct way of writting-->
+
+
+
+		</select>
 	</div>
 
 
